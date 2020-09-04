@@ -4,6 +4,6 @@
 
 今天我们讲3个方面的内容
 
-### 我们利用开源免费的Cloud Foundry项目来搭建V2ray；
-### IBM Cloud Foundry 10天没有操作的话就是关机，所以利用Github来每周开关机一次避免关机；
-### 同时利用cloudflare worker项目来给V2ray加速；
+1. 我们利用开源免费的Cloud Foundry项目来搭建V2ray；
+2. IBM Cloud Foundry 10天没有操作的话就是关机，所以利用Github来每周开关机一次避免关机；
+3.  同时利用cloudflare worker项目来给V2ray加速；
