@@ -64,4 +64,11 @@ bigfang
 ibmcloud resource groups
 ```
  >>> *显示出来的ID就是你的RESOURSE_ID*
+ 
+ 
+##### 2.3. 运行IBM项目
 
+2.3.1. 点击Actions，再点击绿色的框
+2.3.2. 再点击Code--github/workflows---ibm.yml--右边的编辑按钮 修改一下第37行  
+修改完点击start commit。
+再回到Actions就能看到正在运行的项目，等到变成绿色的对号就运行了
