@@ -21,4 +21,6 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 
 ```
 
-> wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCChieh/IBMYes/master/install.sh && chmod +x install.sh  && ./install.sh
+> 注意事项：
+>> 记住填写的 应用名称 建议写：bigfang 
+>> 内存大小选择256m
