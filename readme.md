@@ -24,4 +24,4 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 > 注意事项：
 >> 1. 记住填写的 应用名称 建议写：bigfang 
 >> 2. 内存大小选择256m
-3.一键安装完成后 保存生成VMESS连接
+3. 一键安装完成后 保存生成VMESS连接
