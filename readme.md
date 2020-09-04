@@ -11,6 +11,8 @@
 完成第一部分 就可以使用了，如果进阶可以继续完成第二 第三部分
 让我们开始吧！
 
+### 1. 我们利用开源免费的Cloud Foundry项目来搭建V2ray
+
 ##### 1.1. 申请IBM免费VPS
 > 地址：https://cloud.ibm.com/
 
@@ -25,3 +27,18 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 >> 1. 记住填写的 应用名称 建议写：bigfang 
 >> 2. 内存大小选择256m
 >> 3. 一键安装完成后 保存生成VMESS连接
+
+
+### 2. 利用Github创建每周开关机一次任务
+
+##### 2.1. 项目地址
+> https://github.com/CCChieh/IBMyes
+在项目里点击Fork，这样就复制程序到自己的Github里面
+
+##### 2.2. 建立4项secret
+
+> IBM_ACCOUNT // IBM Cloud的登录邮箱和密码
+> IBM_APP_NAME // 应用的名称
+> REGION_NUM // 区域编码
+> RESOURSE_ID // 资源组ID
+
