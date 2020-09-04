@@ -11,10 +11,10 @@
 完成第一部分 就可以使用了，如果进阶可以继续完成第二 第三部分
 让我们开始吧！
 
-#### 1.申请IBM免费VPS
+##### 1.1. 申请IBM免费VPS
 > 地址：https://cloud.ibm.com/
 
-#### 2.V2ray一键安装代码
+##### 1.2. V2ray一键安装代码
 
 ```
 wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCChieh/IBMYes/master/install.sh && chmod +x install.sh  && ./install.sh
@@ -24,4 +24,4 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 > 注意事项：
 >> 1. 记住填写的 应用名称 建议写：bigfang 
 >> 2. 内存大小选择256m
-3. 一键安装完成后 保存生成VMESS连接
+>> 3. 一键安装完成后 保存生成VMESS连接
