@@ -6,7 +6,7 @@
 
 1. 我们利用开源免费的Cloud Foundry项目来搭建V2ray；
 2. IBM Cloud Foundry 10天没有操作的话就是关机，所以利用Github来每周开关机一次避免关机；
-3.  同时利用cloudflare worker项目来给V2ray加速；
+3. cloudflare worker项目来给V2ray加速；
 
 完成第一部分 就可以使用了，如果进阶可以继续完成第二 第三部分
 让我们开始吧！
@@ -26,8 +26,11 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 > 注意事项：
 >> 1. 记住填写的 应用名称 建议写：bigfang 
 >> 2. 内存大小选择256m
->> 3. 一键安装完成后 保存生成VMESS连接
+>> 3. 一键安装完成后 保存生成VMESS链接
 
+##### 1.3. 客户端配置
+
+倒入vmess链接
 
 ### 2. 利用Github创建每周开关机一次任务
 
@@ -68,7 +71,30 @@ ibmcloud resource groups
  
 ##### 2.3. 运行IBM项目
 
-2.3.1. 点击Actions，再点击绿色的框  
-2.3.2. 再点击Code--github/workflows---ibm.yml--右边的编辑按钮 修改一下第37行  
+###### 2.3.1. 点击Actions，再点击绿色的框  
+###### 2.3.2. 再点击Code--github/workflows---ibm.yml--右边的编辑按钮 修改一下第37行  
 修改完点击start commit。
 再回到Actions就能看到正在运行的项目，等到变成绿色的对号就运行了
+
+### 3. cloudflare加速
+
+登陆Cloudflare官网点击workers--创建--复制脚本--修改对应域名
+
+```
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="ibmyes.us-south.cf.appdomain.cloud";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+```
+
+点击“发送”出现Bad Request表示成功！
+这时候会给一个网址，..workers.dev域名,这是cloudflare中转的域名
+
+### 4. 客户端配置
+
