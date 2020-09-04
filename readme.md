@@ -53,9 +53,15 @@ bigfang
 ```
 
 > RESOURSE_ID // 资源组ID
- *打开IBM cloud shell，输入下面代码*
+```
+你的ID
+```
+
+>> 如何查找RESOURSE_ID？
+>>> *打开IBM cloud shell，输入下面代码*
+
 ```
 ibmcloud resource groups
 ```
- *显示出来的ID就是你的RESOURSE_ID*
+ >>> *显示出来的ID就是你的RESOURSE_ID*
 
