@@ -22,5 +22,5 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 ```
 
 > 注意事项：
->> 记住填写的 应用名称 建议写：bigfang 
->> 内存大小选择256m
+>> 1. 记住填写的 应用名称 建议写：bigfang 
+>> 2. 内存大小选择256m
