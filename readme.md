@@ -38,7 +38,11 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCCh
 ##### 2.2. 建立4项secret
 
 > IBM_ACCOUNT // IBM Cloud的登录邮箱和密码
+
 > IBM_APP_NAME // 应用的名称
+
 > REGION_NUM // 区域编码
+
 > RESOURSE_ID // 资源组ID
+
 
