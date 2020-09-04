@@ -43,9 +43,19 @@ your@email.com
 password
 ```
 > IBM_APP_NAME // 应用的名称
+```
+bigfang
+```
 
 > REGION_NUM // 区域编码
+```
+7
+```
 
 > RESOURSE_ID // 资源组ID
-
+ *打开IBM cloud shell，输入下面代码*
+```
+ibmcloud resource groups
+```
+ *显示出来的ID就是你的RESOURSE_ID*
 
