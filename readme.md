@@ -20,7 +20,7 @@
 ##### 1.2. V2ray一键安装代码
 
 ```
-wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/bigfangfang/IBMYes/master/install.sh && chmod +x install.sh  && ./install.sh
+wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/bigfangfang/IBMVPS/master/install.sh && chmod +x install.sh  && ./install.sh
 
 ```
 
