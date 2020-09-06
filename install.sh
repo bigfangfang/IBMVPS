@@ -1,4 +1,4 @@
-#!/bin/bash
+cd /#!/bin/bash
 SH_PATH=$(cd "$(dirname "$0")";pwd)
 cd ${SH_PATH}
 
@@ -60,6 +60,7 @@ EOF
 clone_repo(){
     echo "进行初始化。。。"
     rm -rf IBMVPS
+    rm -rf IBMyes
     git clone https://github.com/bigfangfang/IBMVPS
     cd IBMVPS
     git submodule update --init --recursive
