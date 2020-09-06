@@ -16,7 +16,7 @@ create_mainfest_file(){
     WSPATH=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
     echo "生成随机WebSocket路径：${WSPATH}"
     
-    cat >  ${SH_PATH}/IBMYes/v2ray-cloudfoundry/manifest.yml  << EOF
+    cat >  ${SH_PATH}/IBMVPS/v2ray-cloudfoundry/manifest.yml  << EOF
     applications:
     - path: .
       name: ${IBM_APP_NAME}
@@ -24,7 +24,7 @@ create_mainfest_file(){
       memory: ${IBM_MEM_SIZE}M
 EOF
 
-    cat >  ${SH_PATH}/IBMYes/v2ray-cloudfoundry/v2ray/config.json  << EOF
+    cat >  ${SH_PATH}/IBMVPS/v2ray-cloudfoundry/v2ray/config.json  << EOF
     {
         "inbounds": [
             {
@@ -61,7 +61,7 @@ clone_repo(){
     echo "进行初始化。。。"
     rm -rf IBMVPS
     git clone https://github.com/bigfangfang/IBMVPS
-    cd IBMYes
+    cd IBMVPS
     git submodule update --init --recursive
     cd v2ray-cloudfoundry/v2ray
     # Upgrade V2Ray to the latest version
@@ -104,8 +104,8 @@ install(){
     VMESSCODE=$(base64 -w 0 << EOF
     {
       "v": "2",
-      "ps": "ibmyes",
-      "add": "ibmyes.us-south.cf.appdomain.cloud",
+      "ps": "ibmvps",
+      "add": "bigfang.us-south.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
       "aid": "4",
