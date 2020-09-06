@@ -120,7 +120,7 @@ EOF
 
     )
 	echo "配置链接："
-    echo vmess://${VMESSCODE}
+        echo vmess://${VMESSCODE}
 
 }
 
