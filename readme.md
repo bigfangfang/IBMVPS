@@ -98,7 +98,20 @@ fetch(request)
 这时候会给一个网址，..workers.dev域名,这是cloudflare中转的域名
 
 ### 4. 客户端配置
-
+======================================================
+大方bigfangYouTube频道：https://bit.ly/332QGCa
 靠谱奈飞合租：https://bit.ly/34IdWaZ
 大方在用机场：https://bit.ly/35zqyzL
 我的电报：bigfangfang
+E-mail：DaFangBigFang@gmail.com
+facebook：https://www.facebook.com/dafangbigfang
+twitter：dafangbigfang
+IG：dafang_bigfang
+wix站：https://bigfang.wixsite.com/mysite
+----------------------------------------------------------------
+我在使用的影片拍攝器材：
+📷 正在使用的4K相機             ‣‣ https://amzn.to/3ahIIrh
+📷 正在用的镜头                      ‣‣ https://amzn.to/2y54Iap
+🎤 麥克風                                  ‣‣ https://amzn.to/3bn37v0
+🎥 三腳架                                  ‣‣ https://amzn.to/2QGVx6I
+
