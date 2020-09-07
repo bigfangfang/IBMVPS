@@ -99,4 +99,6 @@ fetch(request)
 
 ### 4. 客户端配置
 
-
+靠谱奈飞合租：https://bit.ly/34IdWaZ
+大方在用机场：https://bit.ly/35zqyzL
+我的电报：bigfangfang
