@@ -119,8 +119,15 @@ install(){
 EOF
 
     )
-	echo "配置链接："
+    echo "恭喜你到这一步就成功了！Vmess导入客户端后，请务必更改域名中bigfang为你的应用程序名称！请务必根据说明在cloudflare中加速"
+	echo "请观看YouTube影片 IBM Cloud VPS 详细分享：https://bit.ly/3ibq1JI"
+    echo "我的电报：bigfangfang"
+    echo "电报群交流群：https://t.me/dafangbigfang"
+    echo "电报频道：https://t.me/dafangbigfangC"
+    echo "感谢 @CCChieh "
+    echo "配置链接："
     echo vmess://${VMESSCODE}
+    
 
 }
 
