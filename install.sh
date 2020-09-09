@@ -14,6 +14,7 @@ create_mainfest_file(){
     UUID=$(cat /proc/sys/kernel/random/uuid)
     echo "生成随机UUID：${UUID}"
     WSPATH=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
+    appname1=${IBM_APP_NAME}
     echo "生成随机WebSocket路径：${WSPATH}"
     
     cat >  ${SH_PATH}/IBMVPS/v2ray-cloudfoundry/manifest.yml  << EOF
@@ -105,7 +106,7 @@ install(){
     VMESSCODE=$(base64 -w 0 << EOF
     {
       "v": "2",
-      "ps": "ibmvps-${appname}",
+      "ps": "ibmvps-${appname1}",
       "add": "bigfang.us-south.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
