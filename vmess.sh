@@ -15,4 +15,7 @@ ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcl
      "tls": "tls"
   }
 EOF
-)&&echo "配置链接："&&echo vmess://${VMESSCODE}
+)
+
+echo "恭喜你找回了你的vmess"
+&&echo "配置链接："&&echo vmess://${VMESSCODE}
