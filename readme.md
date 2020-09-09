@@ -109,7 +109,8 @@ fetch(request)
 wget --no-check-certificate -O vmess.sh https://raw.githubusercontent.com/bigfangfang/IBMVPS/master/vmess.sh && chmod +x vmess.sh  && ./vmess.sh
 
 
-别高兴太早，到这一步未必说明下面的vmess连接就可以用！  
+=============================================================  
+=============================================================  
 请注意如果出现2个或者3个红色的FAILED就说明你的VMESS连接是无法连接外网的。这个时候需要去排查问题，可以通过这个影片去仔细看看可能能找到答案 https://bit.ly/2ZjVCkN  
 或者观看YouTube影片 IBM Cloud VPS 详细分享：https://bit.ly/3ibq1JI
 如果你看到只有一个红色的Failed 那么恭喜你大概率你的Vmess连接有效！Vmess导入客户端后，请务必将域名中bigfang更改为你的应用程序名称！请务必根据在cloudflare中加速  
