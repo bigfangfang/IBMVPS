@@ -105,8 +105,8 @@ install(){
     VMESSCODE=$(base64 -w 0 << EOF
     {
       "v": "2",
-      "ps": "ibmvps",
-      "add": "bigfang.us-south.cf.appdomain.cloud",
+      "ps": "ibmvps-${appname}",
+      "add": "${appname}.us-south.cf.appdomain.cloud",
       "port": "443",
       "id": "${UUID}",
       "aid": "4",
