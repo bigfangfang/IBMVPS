@@ -103,7 +103,10 @@ fetch(request)
 ### 4. 客户端配置
 
 
+### 5. 找回Vmess链接  
 
+
+wget --no-check-certificate -O vmess.sh https://raw.githubusercontent.com/bigfangfang/IBMVPS/master/vmess.sh && chmod +x vmess.sh  && ./vmess.sh
 
 
 别高兴太早，到这一步未必说明下面的vmess连接就可以用！  
