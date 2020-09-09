@@ -33,7 +33,7 @@ wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/bigf
 
 ##### 1.3. 客户端配置
 
-倒入vmess链接
+导入vmess链接
 
 ### 2. 利用Github创建每周开关机一次任务
 
@@ -97,7 +97,7 @@ fetch(request)
 )
 ```
 
-点击“发送”出现Bad Request表示成功！
+点击“发送”出现404也没有问题 直接保存部署
 这时候会给一个网址，..workers.dev域名,这是cloudflare中转的域名
 
 ### 4. 客户端配置
