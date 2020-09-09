@@ -99,4 +99,9 @@ fetch(request)
 
 ### 4. 客户端配置
 
+++++++++++++++++++++++++++++
+大方bigfangYouTube频道：https://bit.ly/332QGCa  
+TG：@bigfangfang   
+TG群：https://t.me/dafangbigfang  
+TGbigfang频道：https://t.me/dafangbigfangC  
 
