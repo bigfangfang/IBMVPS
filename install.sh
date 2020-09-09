@@ -127,7 +127,7 @@ EOF
     echo "电报群交流群：https://t.me/dafangbigfang 群里有很多小伙伴都会帮你"
     echo "电报频道：https://t.me/dafangbigfangC"
     echo "感谢 @CCChieh "
-    echo "请务必保存好vmess连接目前没有找回的方法"
+    echo ""
     echo "配置链接："
     echo vmess://${VMESSCODE}
     
