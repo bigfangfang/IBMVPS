@@ -22,6 +22,6 @@ echo alterID:64
 echo net:ws
 echo path:${path}
 echo tls:${tls}
-echo "恭喜你找回了你的vmess"
+echo "恭喜你找回了你的 vmess"
 echo "配置链接："
 echo vmess://${VMESSCODE}
