@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "================================+====="
-echo "GMT+8 20200910 22:18 Update"
+echo "GMT+8 20200910 22:25 Update"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -46,11 +46,14 @@ vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","
 cd ..
     echo "Telegram：bigfangfang"
     echo "Telegram Group：https://t.me/dafangbigfang"
-    echo "Telegram channal：https://t.me/dafangbigfangC"
+    echo "Telegram Channal：https://t.me/dafangbigfangC"
+    echo ""
+    echo "YouTube IBMVPS教程：https://bit.ly/3ibq1JI"
     echo "Thanks @CCChieh "
     echo ""
 echo 配置成功
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
+echo ""
 echo vmess://$vmess
