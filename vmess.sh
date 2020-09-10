@@ -5,7 +5,7 @@ ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcl
      "add": "${appname}.us-south.cf.appdomain.cloud",
      "port": "443",
      "id": "${id}",
-     "aid": "64",
+     "aid": "4",
      "net": "ws",
      "type": "none",
      "host": "",
@@ -14,12 +14,7 @@ ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcl
   }
 EOF
 )
-echo address:${appname}.us-south.cf.appdomain.cloud
-echo ID:${id}
-echo alterID:64
-echo net:ws
-echo path:${path}
-echo tls:${tls}
+
 echo "恭喜你找回了你的vmess"
 echo "配置链接："
 echo vmess://${VMESSCODE}
