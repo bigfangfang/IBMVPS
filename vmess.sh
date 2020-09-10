@@ -1,5 +1,5 @@
-ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcloud cf ssh ${appname} -c "cat app/v2ray/config.json"|grep path|sed -e 's/ //g'|sed -e 's/\path//g'|sed -e 's/\"//g'|sed -e 's/\://g'|sed -e 's/\,//g')&&id=$(ibmcloud cf ssh ${appname} -c "cat app/v2ray/config.json" |grep id|sed -e 's/ //g'|sed -e 's/\id//g'|sed -e 's/\"//g'|sed -e 's/\://g'|sed -e 's/\,//g')&&VMESSCODE=$(base64 -w 0 << EOF
-  {
+ibmcloud target --cf && read -p "输入你的app名称：" appname&&path=$(ibmcloud cf ssh ${appname} -c "path=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)"|grep path|sed -e 's/ //g'|sed -e 's/\path//g'|sed -e 's/\"//g'|sed -e 's/\://g'|sed -e 's/\,//g')&&id=$(ibmcloud cf ssh ${appname} -c "cat app/v2ray/config.json" |grep id|sed -e 's/ //g'|sed -e 's/\id//g'|sed -e 's/\"//g'|sed -e 's/\://g'|sed -e 's/\,//g')&&VMESSCODE=$(base64 -w 0 << EOF
+  {path=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
      "v": "2",
      "ps": "bigfang",
      "add": "${appname}.us-south.cf.appdomain.cloud",
