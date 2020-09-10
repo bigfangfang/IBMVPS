@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "================================+====="
-echo "GMT+8 20200910 22:40 Update"
+echo "GMT+8 20200910 22:55 Update"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -57,5 +57,4 @@ echo UUID: $uuid
 echo path: /$path
 echo ""
 echo 配置成功
-echo vmess://$vmess
 echo vmess://$vmess
