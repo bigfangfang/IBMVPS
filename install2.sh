@@ -4,6 +4,7 @@ read -p "请设置你的容器内存大小(默认256):" ramsize
 if [ -z "$ramsize" ];then
 	ramsize=256
 fi
+pause "xxx ok"
 rm -rf cloudfoundry
 mkdir cloudfoundry
 cd cloudfoundry
