@@ -1,7 +1,6 @@
 #!/bin/sh
-
 echo "================================+====="
-echo "GMT+8 20200910 21:58 最新更新！"
+echo "GMT+8 20200910 22:40 Update"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -43,10 +42,20 @@ echo '  memory: '$ramsize'M'>>manifest.yml
 ibmcloud target --cf
 ibmcloud cf push
 domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
-vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBM_Cloud","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
+vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBMVPS","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
 cd ..
-echo 容器已经成功启动
+    echo "Telegram：@bigfangfang"
+    echo "Telegram Group：https://t.me/dafangbigfang"
+    echo "Telegram Channal：https://t.me/dafangbigfangC"
+    echo ""
+    echo "YouTube IBMVPS教程：https://bit.ly/3ibq1JI"
+    echo "Thanks @CCChieh "
+    echo ""
+echo 配置信息
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
+echo ""
+echo 配置成功
+echo vmess://$vmess
 echo vmess://$vmess
