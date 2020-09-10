@@ -1,6 +1,8 @@
 #!/bin/sh
- echo "GMT+8 20200910 20:50 最新更新！"
- echo "感谢 @CCChieh @不愿透露神秘大佬"
+
+echo "GMT+8 20200910 20:50 最新更新！"
+echo "感谢 @CCChieh @不愿透露神秘大佬"
+echo "============================="
 read -p "请输入应用程序名称:" appname
 read -p "请设置你的容器内存大小(默认256):" ramsize
 if [ -z "$ramsize" ];then
@@ -45,5 +47,5 @@ cd ..
     echo UUID: $uuid
     echo path: /$path
     echo "配置链接："
-    eecho vmess://$vmess
+    echo vmess://$vmess
 
