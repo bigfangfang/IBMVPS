@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "================================+====="
-echo "GMT+8 20200910 21:46 最新更新！"
+echo "GMT+8 20200910 21:51 最新更新！"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -37,10 +37,6 @@ domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
 vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBMVPS","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
 cd ..
 echo 恭喜你已经配置成功
-echo ================================+=====
-echo GMT+8 20200910 21:46 最新更新！
-echo 感谢 @CCChieh @不愿透露神秘大佬
-echo ===============================
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
