@@ -17,7 +17,7 @@ EOF
 
 echo address:${appname}.us-south.cf.appdomain.cloud
 echo ID:${id}
-echo port:443
+echo port:4433
 echo alterID:64
 echo net:ws
 echo path:${path}
