@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "================================+====="
-echo "GMT+8 20200910 22:25 Update"
+echo "GMT+8 20200910 22:31 Update"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -42,7 +42,7 @@ echo '  memory: '$ramsize'M'>>manifest.yml
 ibmcloud target --cf
 ibmcloud cf push
 domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
-vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBM_Cloud","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
+vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBMVPS","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
 cd ..
     echo "Telegram：bigfangfang"
     echo "Telegram Group：https://t.me/dafangbigfang"
