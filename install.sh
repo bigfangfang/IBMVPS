@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "================================+====="
-echo "GMT+8 20200910 23:14 Update"
+echo "GMT+8 20200910 23:24 Update"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -50,7 +50,7 @@ cd ..
     echo "Telegram Channal：https://t.me/dafangbigfangC"
     echo ""
     echo "YouTube IBMVPS教程：https://bit.ly/3ibq1JI"
-    echo "Thanks @CCChieh "
+    echo "Thanks @CCChieh @不愿透露神秘大佬"
     echo ""
 echo 配置信息
 echo 地址: $domain
