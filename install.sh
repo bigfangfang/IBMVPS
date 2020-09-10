@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "================================+====="
-echo "GMT+8 20200910 21:51 最新更新！"
+echo "GMT+8 20200910 21:56 最新更新！"
 echo "感谢 @CCChieh @不愿透露神秘大佬"
 echo "==============================="
 read -p "请输入应用程序名称:" appname
@@ -12,6 +12,15 @@ fi
 rm -rf cloudfoundry
 mkdir cloudfoundry
 cd cloudfoundry
+
+echo '<!DOCTYPE html> '>>index.php
+echo '<html> '>>index.php
+echo '<body>'>>index.php
+echo '<?php '>>index.php
+echo 'echo "Hello World!"; '>>index.php
+echo '?> '>>index.php
+echo '<body>'>>index.php
+echo '</html>'>>index.php
 
 wget https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
 unzip -d v2ray1 v2ray-linux-64.zip
@@ -34,9 +43,9 @@ echo '  memory: '$ramsize'M'>>manifest.yml
 ibmcloud target --cf
 ibmcloud cf push
 domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
-vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBMVPS","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
+vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBM_Cloud","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
 cd ..
-echo 恭喜你已经配置成功
+echo 容器已经成功启动
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
