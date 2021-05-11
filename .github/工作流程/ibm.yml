@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   schedule:
-    - cron: '00 21 * * *'
+    -的cron的：'30 6 * * *’
 
 jobs:
   ibm-cloud-restart:
