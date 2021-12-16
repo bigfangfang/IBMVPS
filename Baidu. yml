@@ -1,0 +1,7 @@
+dns:
+  port: 5353
+  address: 101.6.6.6
+servers:
+  cu-nj:
+    port: 443
+    address: cloudnproxy.baidu.com
